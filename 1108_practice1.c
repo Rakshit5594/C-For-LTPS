@@ -23,7 +23,7 @@
 //     return 0;
 // }
 
-// #include <stdio.h>
+#include <stdio.h>
 
 // int main() {
 //     int year;
@@ -54,17 +54,77 @@
 //     return 0;
 // }
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main() {
-    int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
-    if (num > 0)
-        printf("%d is a positive number.\n", num);
-    else if (num < 0)
-        printf("%d is a negative number.\n", num);
-    else
-        printf("The number is zero.\n");
-    return 0;
-}
+// int main() {
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     if (num > 0)
+//         printf("%d is a positive number.\n", num);
+//     else if (num < 0)
+//         printf("%d is a negative number.\n", num);
+//     else
+//         printf("The number is zero.\n");
+//     return 0;
+// }
+
+
+
+// check if a number is divisible by 100 and also check it to be even and odd
+// #include <stdio.h>
+
+// int main() {
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+
+//     if (num % 100 == 0) {
+//         printf("%d is divisible by 100.\n", num);
+//         if (num % 2 == 0)
+//             printf("%d is an even number.\n", num);
+//         else
+//             printf("%d is an odd number.\n", num);
+//     } else {
+//         printf("%d is not divisible by 100.\n", num);
+//     }
+    
+//     return 0;
+// }
+
+// check if the number is divisible by 5 and 11 both
+
+// #include <stdio.h>
+
+// int main() {
+//     int num;
+//     printf("Enter a number: ");
+//     scanf("%d", &num);
+//     if (num % 5 == 0 && num % 11 == 0)
+//         printf("%d is divisible by both 5 and 11.\n", num);
+//     else
+//         printf("%d is not divisible by both 5 and 11.\n", num);
+    
+//     return 0;
+// }
+
+// check if symbol is digit , character or a special symbol
+
+// #include <stdio.h>
+
+// int main() {
+//     char ch;
+//     printf("Enter a character: ");
+//     scanf("%c", &ch);
+
+//     if (ch >= '0' && ch <= '9')
+//         printf("%c is a digit.\n", ch);
+//     else if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
+//         printf("%c is an alphabet character.\n", ch);
+//     else
+//         printf("%c is a special symbol.\n", ch);
+
+//     return 0;
+// }
+
+
