@@ -13,6 +13,7 @@ int main() {
     }
     printf("odd numbers between %d and %d are:\n");
     for(int i = start; i <= end; i++) {
+        
         if(i % 2 != 0) {
             printf("%d\n", i);
         }
