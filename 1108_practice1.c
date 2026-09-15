@@ -127,13 +127,69 @@
 //     return 0;
 // }
 
+// #include <stdio.h>
+
+// int main() {
+//     int i = 10;
+//     while(i < 5) {
+//     printf("i: %d\n", ++i);
+        
+//     }
+//     return 0;
+// }
+
+
 #include <stdio.h>
 
-int main() {
-    int i = 10;
-    while(i < 5) {
-    printf("i: %d\n", ++i);
-        
+void printArray(int arr[2][3], int rows, int cols) {
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
     }
+}
+
+int sumArray(int arr[2][3], int rows, int cols) {
+    int sum = 0;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            sum += arr[i][j];
+        }
+    }
+    return sum;
+}
+
+int sumofEven(int arr[2][3] , int rows, int cols){
+    int sum = 0;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            if (arr[i][j] % 2 == 0){
+                sum += arr[i][j];
+            }
+        }
+    }
+    return sum;
+}
+
+int sumofOdd(int arr[2][3] , int rows, int cols){
+    int sum = 0;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < cols; j++) {
+            if (arr[i][j] % 2 != 0){
+                sum += arr[i][j];
+            }
+        }
+    }
+    return sum;
+}
+int main() {
+    
+    int arr[2][3] = {{1,2,3} , {4,5,6}};
+    printArray(arr, 2, 3);
+    printf("Sum of array elements: %d\n", sumArray(arr, 2, 3));
+    printf("Sum of even  array elements: %d\n", sumofEven(arr, 2, 3));
+    printf("Sum of odd array elements: %d\n", sumofOdd(arr, 2, 3));
+
     return 0;
 }
