@@ -10,8 +10,7 @@ int sum(){
     p2 = &b;
     sum = *p1+*p2;
     printf("sum = %d" , sum);
-
-
+    
 }
 int main() {
     sum();
